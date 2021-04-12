@@ -39,7 +39,7 @@ $(document).ready(function () {
     }, false)
 
     var kyDeadline, day, now;
-    kyDeadline = Date.parse("Dec 21, 2020");
+    kyDeadline = Date.parse("Dec 24, 2021");
     now = new Date();
     day = Math.floor((kyDeadline - now) / 86400000);
     $(".kyDay").html(day);

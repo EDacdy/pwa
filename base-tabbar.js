@@ -42,18 +42,18 @@ Head.appendChild(style);
 var tab = [
     {
         text: "首页",
-        url: "http://www.kaoyan1v1.com/m/index.html",
+        url: "./index.html",
         path: 'http://www.kaoyan1v1.com/m/images/tab-01.png',
         active: 'http://www.kaoyan1v1.com/m/images/tab-02.png'
     },
     {
-        text: "课程",
-        url: "javascript:;",
+        text: "资料",
+        url: "./list.html",
         path: 'http://www.kaoyan1v1.com/m/images/tab-03.png',
         active: 'http://www.kaoyan1v1.com/m/images/tab-04.png'
     },
     {
-        text: "活动",
+        text: "调剂",
         url: "javascript:;",
         path: 'http://www.kaoyan1v1.com/m/images/tab-05.png',
         active: 'http://www.kaoyan1v1.com/m/images/tab-06.png'
@@ -65,7 +65,7 @@ var tab = [
         active: 'http://www.kaoyan1v1.com/m/images/tab-08.png'
     },
     {
-        text: "我们",
+        text: "我的",
         url: "javascript:;",
         path: 'http://www.kaoyan1v1.com/m/images/tab-09.png',
         active: 'http://www.kaoyan1v1.com/m/images/tab-10.png'

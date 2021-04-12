@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    max-width: 768px;
+    overflow-x: hidden;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+em{
+    font-style: normal;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.header a:first-child::after{
+    content: '';
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.header::after{
+    content: '';
+    position: absolute;    
+    top:100%;    
+    width: 100%;    
+    left:0;       
+    height:0px;    
+    border-top: solid  #EEEEEE 1px;
+    z-index: 999;
+}
+.header>a{
+
+}
+.header .left img{
+    width: 9px;
+    height: auto;
+}
+.header .center img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    height: auto;
+}
+.header .right img{
+    width: 20px;
+    height: auto;
+}
+.zyList{
+    width: 100%;
+    height: auto;
+}
+.zyList .zyCard{
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    display: flex;
+    position: relative;
+}
+.zyCard .yxMain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #333333;
+}
+.zyCard .yxMain .top{
+    display: flex;
+    margin-bottom: 10px;
+}
+.zyCard .yxMain .top>div{
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+.zyCard .yxMain .top>div>span{
+    color: #999999;
+    font-weight: normal;
+    font-size: 15px;
+} 
+.zyCard .yxMain .top>span{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    color: #FF9933; 
+    border: 1px solid #FF9C2E;
+    border-radius: 15px;
+    padding: 0px 5px;
+    background-color: #FFF6EC;
+    font-size: 14px;
+}
+.zyCard .yxMain .bottom{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    color: #999999;
+    margin-top: 5px;
+}
+.zyCard .yxMain .bottom >div{
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+}
+.zyCard .yxMain .bottom >div img{
+    margin-right: 5px;
+}
+.zyCard::after{
+    position: absolute;  
+    width: 100%;     
+    top:100%;    
+    left:0%;    
+    content: '';    
+    height: 0px;    
+    border-top: solid #F8F8F8 8px;
+    z-index: 99;
+}
+
+/* 文字贯穿线 */
+.overline{
+	margin: 8px auto;
+	width: 27%;
+	height: 26px;
+	/* line-height: 50px; */
+	font-size: 15px;
+	color: #FF9C2E;
+	text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overline::before{
+	content: "";
+	width: 12px; 
+	border-top: 1px solid #FF9C2E;
+	display: block;
+	position: absolute;
+	top:50%;
+	left: -6px;
+
+}
+.overline::after{
+	content: "";
+	width: 12px; 
+	border-top: 1px solid #FF9C2E;
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: -6px;
+}
+
+.zyMain{
+    width: 100%;
+    height: auto;
+    padding: 15px 16px;
+    box-sizing: border-box;
+}
+
+.zyMain>p{
+    color: #666666;
+    line-height: 26px;
+    text-indent: 26px;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: .2px;
+}
+.xgzy{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.xgzy>div{
+    width: 30%;
+    white-space: nowrap;
+    color: #CA6A00;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xgzy>div>span{
+    display: inline-block;
+    background-color: #CA6A00;
+    border-radius: 50%;
+    color: #FFF;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+.xgzy>div>a{
+    color: #CA6A00;
+}
+.zykaoa{
+    width: 100%;
+    height: auto;
+    background-color: #666666;
+    overflow: hidden;
+}
+.zykaoa img{
+}
+.tjyx{
+}
+.tj {
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    position: relative;
+    padding-right: 12px;
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+.tj strong{
+    font-size: 16px;
+    color: #333333;
+    margin-right: auto;
+}
+.tj span{
+    min-height: 21px;
+    line-height: 21px;
+    margin-right: 5px;
+    padding: 0px 3px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color:#F1F1F1;
+    color: #999999;
+}
+.tj::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    background: url(../images/arr2.svg) no-repeat;
+}

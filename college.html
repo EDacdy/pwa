@@ -1,0 +1,434 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>院校列表 - 可锐教育</title>
+    <meta content="研招 - 可锐教育" name="Keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/college.css" type="text/css">
+    <link rel="stylesheet" href="./plugins/swiper.min.css" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="javascript:history.go(-1)" class="left">
+            <img src="./images/left.png" />
+        </a>
+        <div class="center">
+            <img src="./images/font2.png" />
+        </div>
+        <a href="./search.html" class="right">
+            <img src="./images/search.png" />
+        </a>
+    </div>
+    <div class="topmenu">
+        <div class="selectlist">
+            <div class="select_textdiv">
+                <input type="hidden" value="" />
+                <p class="s_text">地区</p>
+                <span class="down">
+                    <img src="./images/arr.svg">
+                </span>
+            </div>
+            <div class="select_textul">
+                <ul class="select_first_ul" style="height: 60vh;">
+                    <li class="focus">
+                        <p>一区</p>
+                        <ul class="select_second_ul" style="display: block;">
+                            <li>北京</li>
+                            <li>天津</li>
+                            <li>河北</li>
+                            <li>山西</li>
+                            <li>辽宁</li>
+                            <li>吉林</li>
+                            <li>黑龙江</li>
+                            <li>上海</li>
+                            <li>江苏</li>
+                            <li>浙江</li>
+                            <li>安徽</li>
+                            <li>福建</li>
+                            <li>江西</li>
+                            <li>山东</li>
+                            <li>河南</li>
+                            <li>湖北</li>
+                            <li>湖南</li>
+                            <li>广东</li>
+                            <li>重庆</li>
+                            <li>四川</li>
+                            <li>陕西</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>二区</p>
+                        <ul class="select_second_ul">
+                            <li>内蒙古</li>
+                            <li>广西</li>
+                            <li>海南</li>
+                            <li>贵州</li>
+                            <li>云南</li>
+                            <li>西藏</li>
+                            <li>甘肃</li>
+                            <li>青海</li>
+                            <li>宁夏</li>
+                            <li>新疆</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="closeMenu"></div>
+            </div>
+        </div>
+        <div class="selectlist">
+            <div class="select_textdiv">
+                <input type="hidden" value="" />
+                <p class="s_text">类型</p><span class="down"><img src="./images/arr.svg"></span>
+            </div>
+            <div class="select_textul">
+                <ul class="select_first_ul"  style="background-color: #ffffff;">
+                    <li>
+                        <p>理工类</p>
+                    </li>
+                    <li>
+                        <p>综合类</p>
+                    </li>
+                    <li>
+                        <p>语言类</p>
+                    </li>
+                    <li>
+                        <p>综合类</p>
+                    </li>
+                    <li>
+                        <p>农林类</p>
+                    </li>
+                    <li>
+                        <p>医药类</p>
+                    </li>
+                    <li>
+                        <p>综合类</p>
+                    </li>
+                    <li>
+                        <p>农林类</p>
+                    </li>
+                    <li>
+                        <p>医药类</p>
+                    </li>
+                </ul>
+                <div class="closeMenu"></div>
+            </div>
+        </div>
+        <div class="selectlist">
+            <div class="select_textdiv">
+                <input type="hidden" value="" />
+                <p class="s_text">属性</p>
+                <span class="down">
+                    <img src="./images/arr.svg">
+                </span>
+            </div>
+            <div class="select_textul">
+                <ul class="select_first_ul"  style="background-color: #ffffff;">
+                    <li>
+                        <p>985</p>
+                    </li>
+                    <li>
+                        <p>211</p>
+                    </li>
+                    <li>
+                        <p>34所自主划线院校</p>
+                    </li>
+                    <li>
+                        <p>科研院所</p>
+                    </li>
+                </ul>
+                <div class="closeMenu"></div>
+            </div>
+        </div>
+        <div class="selectlist">
+            <div class="select_textdiv">
+                <input type="hidden" value="" />
+                <p class="s_text">隶属</p><span class="down"><img src="./images/arr.svg"></span>
+            </div>
+            <div class="select_textul">
+                <ul class="select_first_ul"  style="background-color: #ffffff;">
+                    <li>
+                        <p>教育部</p>
+                    </li>
+                    <li>
+                        <p>中央部委</p>
+                    </li>
+                    <li>
+                        <p>地方所属</p>
+                    </li>
+                    <li>
+                        <p>工业与信息化部</p>
+                    </li>
+                    <li>
+                        <p>中国科学院</p>
+                    </li>
+                    <li>
+                        <p>水利部</p>
+                    </li>
+                    <li>
+                        <p>交通运输部</p>
+                    </li>
+                    <li>
+                        <p>信息产业部</p>
+                    </li>
+                </ul>
+                <div class="closeMenu"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 院校列表 -->
+    <div class="yxList">
+        <div class="yxCard">
+            <div class="yxIcon">
+                <img src="http://www.kaoyan1v1.com/UploadFiles/schoolInfo/SchoolLogo/334.png" />
+            </div>
+            <a href="./college_details.html" class="yxMain">
+                <div class="top">
+                    <div>中国政法大学</div>
+                    <span><img src="./images/dw.svg" />北京</span>
+                </div>
+                <div class="center">
+                    <span>985</span>
+                    <span>211</span>
+                    <span>双一流</span>
+                </div>
+                <div class="bottom">
+                    <div>类型：<span>理工类</span></div>
+                    <div>隶属：<span>教育部</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="yxCard">
+            <div class="yxIcon">
+                <img src="http://www.kaoyan1v1.com/UploadFiles/schoolInfo/SchoolLogo/168.png" />
+            </div>
+            <a href="./college_details.html" class="yxMain">
+                <div class="top">
+                    <div>复旦大学</div>
+                    <span><img src="./images/dw.svg" />上海</span>
+                </div>
+                <div class="center">
+                    <span>985</span>
+                    <span>211</span>
+                    <span>34所自主划线</span>
+                    <span>双一流</span>
+                </div>
+                <div class="bottom">
+                    <div>类型：<span>理工类</span></div>
+                    <div>隶属：<span>教育部</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="yxCard">
+            <div class="yxIcon">
+                <img src="http://www.kaoyan1v1.com/UploadFiles/schoolInfo/SchoolLogo/217.png" />
+            </div>
+            <a href="./college_details.html" class="yxMain">
+                <div class="top">
+                    <div>浙江大学</div>
+                    <span><img src="./images/dw.svg" />浙江</span>
+                </div>
+                <div class="center">
+                    <span>985</span>
+                    <span>211</span>
+                    <span>34所自主划线</span>
+                    <span>双一流</span>
+                </div>
+                <div class="bottom">
+                    <div>类型：<span>理工类</span></div>
+                    <div>隶属：<span>工业与信息化部 </span></div>
+                </div>
+            </a>
+        </div>
+        <div class="yxCard">
+            <div class="yxIcon">
+                <img src="http://www.kaoyan1v1.com/UploadFiles/schoolInfo/SchoolLogo/7.png" />
+            </div>
+            <a href="./college_details.html" class="yxMain">
+                <div class="top">
+                    <div>北京理工大学</div>
+                    <span><img src="./images/dw.svg" />北京</span>
+                </div>
+                <div class="center">
+                    <span>985</span>
+                    <span>211</span>
+                    <span>34所自主划线</span>
+                    <span>双一流</span>
+                </div>
+                <div class="bottom">
+                    <div>类型：<span>理工类</span></div>
+                    <div>隶属：<span>工业与信息化部 </span></div>
+                </div>
+            </a>
+        </div>
+        <div class="yxCard">
+            <div class="yxIcon">
+                <img src="http://www.kaoyan1v1.com/UploadFiles/schoolInfo/SchoolLogo/7.png" />
+            </div>
+            <a href="./college_details.html" class="yxMain">
+                <div class="top">
+                    <div>北京理工大学</div>
+                    <span><img src="./images/dw.svg" />北京</span>
+                </div>
+                <div class="center">
+                    <span>985</span>
+                    <span>211</span>
+                    <span>34所自主划线</span>
+                    <span>双一流</span>
+                </div>
+                <div class="bottom">
+                    <div>类型：<span>理工类</span></div>
+                    <div>隶属：<span>工业与信息化部 </span></div>
+                </div>
+            </a>
+        </div>
+        <div class="yxCard">
+            <div class="yxIcon">
+                <img src="http://www.kaoyan1v1.com/UploadFiles/schoolInfo/SchoolLogo/7.png" />
+            </div>
+            <a href="./college_details.html" class="yxMain">
+                <div class="top">
+                    <div>北京理工大学</div>
+                    <span><img src="./images/dw.svg" />北京</span>
+                </div>
+                <div class="center">
+                    <span>985</span>
+                    <span>211</span>
+                    <span>34所自主划线</span>
+                    <span>双一流</span>
+                </div>
+                <div class="bottom">
+                    <div>类型：<span>理工类</span></div>
+                    <div>隶属：<span>工业与信息化部 </span></div>
+                </div>
+            </a>
+        </div>
+        <div class="yxCard">
+            <div class="yxIcon">
+                <img src="http://www.kaoyan1v1.com/UploadFiles/schoolInfo/SchoolLogo/7.png" />
+            </div>
+            <a href="./college_details.html" class="yxMain">
+                <div class="top">
+                    <div>北京理工大学</div>
+                    <span><img src="./images/dw.svg" />北京</span>
+                </div>
+                <div class="center">
+                    <span>985</span>
+                    <span>211</span>
+                    <span>34所自主划线</span>
+                    <span>双一流</span>
+                </div>
+                <div class="bottom">
+                    <div>类型：<span>理工类</span></div>
+                    <div>隶属：<span>工业与信息化部 </span></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="http://www.kaoyan1v1.com/Template/Default/Skin/2018skin/js/jquery-1.11.3.js"></script>
+    <script>
+        $(function () {
+            var v_width = $(document.body).width();
+            $(".select_textul").width(v_width);
+            $(".select_textdiv").click(function () {
+                // 隐藏其他下拉and显示
+                $(this).parent().siblings().find(".select_textul").hide();
+                $(this).siblings(".select_textul").fadeToggle(200);
+
+                // 监听一次触摸事件关闭下拉
+                $('.closeMenu').one("touchstart", function () {
+                    $('.closeMenu').parents('.select_textul').fadeOut(300);
+                    console.log("asdsad");
+                })
+                // 监听一次遮罩点击事件关闭下拉
+                $('.closeMenu').one("click", function () {
+                    console.log($(this).parents('.select_textul'));
+                    $(this).parents('.select_textul').fadeOut(300);
+                    event.stopPropagation();
+                })
+                var lilength = $(this).siblings(".select_textul").find("li.focus").has(".select_second_ul").length;
+                if (lilength > 0) {
+                    $(this).siblings(".select_textul").find("li.focus>.select_second_ul").show();
+                } else {
+                    $(".select_first_ul>li>p").css("width", "30%");
+                }
+            })
+            $(".select_first_ul>li>p").click(function () {
+                $(".select_second_ul").hide();
+                $(this).parent("li").addClass("focus").siblings("li").removeClass("focus");
+                // 判断是否有二级联动
+                var ynul = $(this).parent("li").has(".select_second_ul").length;
+                if (ynul == 0) {
+                    var choose = $(this).text();
+                    $(this).parents(".select_textul").siblings(".select_textdiv").find(".s_text").text(choose);
+                    $(this).parents(".select_textul").siblings("input").val(choose);
+                    $(this).parents(".select_textul").fadeOut(300);
+                } else {
+                    // 二级联动左列切换
+                    $(".select_second_ul").hide();
+                    $(this).siblings(".select_second_ul").show();
+                    event.stopPropagation(); 
+                    chooseclick();
+                }
+            });
+            chooseclick();
+            function chooseclick() {
+                // 二级联动右列点击
+                $(".select_second_ul>li").click(function () {
+                    var choose = $(this).text();
+                    $(this).addClass("focusli").siblings("li").removeClass("focusli");
+                    $(this).parents(".select_textul").siblings(".select_textdiv").find(".s_text").text(choose);
+                    $(this).parents(".select_textul").siblings("input").val(choose);
+                    $(this).parents(".select_textul").fadeOut(300); 
+                    event.stopPropagation();
+                });
+            }
+            // 滚动无限加载
+            var LockMore = false;//加载锁定
+            $(window).scroll(function (event) {
+                var wScrollY = window.scrollY; // 当前滚动条位置  
+                var wInnerH = window.innerHeight; // 设备窗口的高度
+                var bScrollH = document.body.scrollHeight; // 滚动条总高度
+                if (LockMore) {
+                    return false;
+                }
+                if (wScrollY + wInnerH >= bScrollH) {
+                    LockMore = true;
+                    setTimeout(function () {
+                        var str = `<div class="yxCard">
+                                <div class="yxIcon">
+                                    <img src="http://www.kaoyan1v1.com/UploadFiles/schoolInfo/SchoolLogo/168.png" />
+                                </div>
+                                <a href="./college_details.html" class="yxMain">
+                                    <div class="top">
+                                        <div>复旦大学</div>
+                                        <span><img src="./images/dw.svg" />上海</span>
+                                    </div>
+                                    <div class="center">
+                                        <span>985</span>
+                                        <span>211</span>
+                                        <span>34所自主划线</span>
+                                        <span>双一流</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <div>类型：<span>理工类</span></div>
+                                        <div>隶属：<span>教育部</span></div>
+                                    </div>
+                                </a>
+                            </div>`;
+                        str = str.repeat(5);
+                        $('.yxList').append(str);
+                        // 最好在回调中将LockMore设置为false
+                        LockMore = false;
+                    }, 500);
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
