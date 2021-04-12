@@ -1,0 +1,1126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    width: 100vw;
+    max-width: 768px;
+    overflow-x: hidden;
+    background: url(../images/topbg.png) no-repeat;
+    background-size: 100% auto;
+}
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+em {
+    font-style: normal;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+a,
+button,
+input,
+optgroup,
+select,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a,
+img {
+    -webkit-touch-callout: none;
+}
+/* 头部 */
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header .left img {
+    width: 91px;
+    height: auto;
+}
+
+
+/* .header .left::after{
+    content: '';
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+
+.header .search {
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 15px 0 10px;
+    padding-left: 25px;
+    flex: 1;
+    color: #CCCCCC;
+    background-color: #FFF;
+    border-radius: 25px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.header .search::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 55%;
+    background: url(../images/search.png) no-repeat;
+    background-size: 100% 100%;
+    width: 14px;
+    height: 14px;
+    transform: translateY(-50%);
+}
+
+.header .right img {
+    width: 23.5px;
+    height: auto;
+}
+
+.header .right::after {
+    width: 40px;
+    height: 50px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* topModules */
+.topModules {
+    width: 100%;
+    height: auto;
+    padding: 0px 16px;
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.topModules .banner {
+    width: 100%;
+    height: 134px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.topModules .banner .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.topModules .banner .swiper-pagination {
+    position: absolute;
+    bottom: 5%;
+}
+
+.topModules .banner .swiper-pagination-bullet-active {
+    background-color: #FFFFFF!important;
+}
+
+.topModules .banner .swiper-pagination-bullet {
+    width: 6px!important;
+    height: 6px!important;
+    background-color: #FFECD1!important;
+}
+
+
+/* 金刚区图标 */
+
+.topModules .core {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 0;
+}
+
+.topModules .core .top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.topModules .core .top a {
+    width: 25%;
+    height: auto;
+    color: #333333;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 0px;
+    font-size: 16px;
+}
+
+.topModules .core .top a>img {
+    width: 40px;
+    height: auto;
+    margin: 5px 0;
+}
+
+
+/* 考研公告日历倒计时 */
+
+.notice {
+    width: 100%;
+    /* height: 45px; */
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.notice .kygg {
+    width: 74px;
+    height: auto;
+}
+
+.notice .kyTime {
+    margin-left: 5px;
+    color: #666666;
+    font-size: 15px;
+}
+
+.notice .kyTime span {
+    color: #FF8600;
+    font-size: 17px;
+    margin: 0 3px;
+}
+
+.notice .rili {
+    border: 2px solid #FFA83B;
+    border-radius: 15px;
+    color: #FF8600;
+}
+
+.notice .rili {
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    /* padding: 0 5px; */
+    font-size: 13px;
+    margin-left: auto;
+}
+
+.notice .rili img:first-child {
+    width: 18px;
+    height: auto;
+    margin: 0 5px;
+}
+
+.notice .rili img:last-child {
+    width: 5px;
+    height: auto;
+    margin: 0 6px;
+}
+
+
+/* 头部标题可重用 */
+
+.fontBox {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.fontBox .boxleft {
+    color: #333333;
+    position: relative;
+    font-size: 17px;
+}
+
+.fontBox .boxleft::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-color: #FFF3E9;
+    z-index: -1;
+}
+
+.fontBox .boxleft span {
+    color: #999999;
+    font-size: 12px;
+}
+
+.fontBox .boxRight {
+    width: 25px;
+    height: 16px;
+    color: #FE8434;
+    background-color: #FFF3E9;
+    border-radius: 14px;
+    position: relative;
+}
+
+.fontBox .boxRight img {
+    width: 12px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* 考研公开课 */
+
+.openClass {
+    width: 100%;
+    height: auto;
+    /* padding: 16px; */
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.openClass .gkk {
+    width: 100%;
+    /* margin-left: 16px; */
+}
+
+.openClass .gkk .swiper-wrapper {
+    margin: 6px 0 20px;
+}
+
+.openClass .gkk .swiper-slide {
+    width: 88%;
+    height: 180px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px 0px rgba(227, 227, 227, 0.35)
+}
+
+.openClass .gkk .swiper-slide:first-child {
+    margin-left: 16px;
+}
+
+.openClass .gkk .swiper-slide:last-child {
+    margin-right: 16px;
+}
+
+.openClass .gkk .swiper-slide .c_title {
+    width: 100%;
+    height: auto;
+    color: #333333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.c_title span {
+    width: 58px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    color: #FFFFFF;
+    background: url(../images/duo.png) no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 2px;
+    margin-right: 6px;
+}
+
+.c_time {
+    margin-top: 8px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.c_data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+.c_data::after {
+    position: absolute;
+    bottom: -5px;
+    left: -15px;
+    width: calc(100% + 30px);
+    height: 1px;
+    background-color: #f1f1f1;
+    content: '';
+}
+
+.c_data>div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #999999;
+}
+
+.c_data>div:first-child img {
+    width: 25px;
+    height: auto;
+}
+
+.c_data>div:last-child {
+    color: #FF3300;
+    font-size: 18px;
+}
+
+.c_data>div:last-child span {
+    display: inline-block;
+    color: #CCCCCC;
+    font-size: 13px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.c_data>div:last-child span::after {
+    width: 100%;
+    height: 1.5px;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: '';
+    z-index: 5;
+}
+
+.c_btm {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c_btm .left span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFAB6B;
+    font-size: 12px;
+    background-color: #FFF7F3;
+    border: 1px solid #FFAB6B;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+.c_btm .right {
+    color: #999999;
+    font-size: 13px;
+}
+
+.c_btm .right span {
+    color: #FF3300;
+    margin: 0px 3px;
+}
+
+
+/* 考研工具 */
+
+.kyToll {
+    width: 100%;
+    height: auto;
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.kyToll .fontBox .boxleft::after {
+    background-color: #E9FBFF;
+}
+
+.kyToll .tools {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 16px 20px;
+}
+
+.kyToll .tools>a {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333333;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.kyToll .tools>a img {
+    width: 38px;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+
+/* 考研动态 */
+
+.kyDynamic {
+    width: 100%;
+    height: auto;
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.kyDynamic .fontBox .boxleft::after {
+    background-color: #EAE9FF;
+}
+
+.kyDynamic .adCard {
+    width: 100%;
+    height: auto;
+    padding: 0px 16px 13px;
+    border-bottom: 1px solid #F7F7F7;
+}
+
+.kyDynamic .adCard a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #363636;
+    line-height: 25px;
+}
+
+.kyDynamic .adCard a>img {
+    width: 105px;
+    height: auto;
+    margin-right: 16px;
+    border-radius: 4px;
+}
+
+.kyDynamic .dtList {
+    width: 100%;
+    height: auto;
+    padding: 0px 16px;
+}
+
+.kyDynamic .dtList a {
+    display: block;
+    padding: 16px 0px;
+    border-bottom: 1px solid #F7F7F7;
+}
+
+.kyDynamic .dtList a p {
+    color: #363636;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 9px;
+}
+
+.kyDynamic .dtList a span {
+    color: #9A9A9A;
+    font-size: 13px;
+}
+
+
+/* 考研辅导 */
+
+.kyCoach {
+    width: 100%;
+    height: auto;
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.kyCoach .fontBox .boxleft::after {
+    background-color: #FFF3E9;
+}
+
+.kyCoach .c_one {
+    width: 100%;
+    height: auto;
+    padding: 0px 16px;
+    display: block;
+    color: #363636;
+    font-size: 14px;
+}
+
+.kyCoach .c_one img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.kyCoach .c_one p {
+    margin-top: 12px;
+    display: flex;
+}
+
+.kyCoach .c_one span {
+    color: #999999;
+    margin-left: auto;
+}
+
+.kyCoach .c_two {
+    width: 100%;
+    height: auto;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.kyCoach .c_two a {
+    width: 48%;
+    height: auto;
+    display: block;
+}
+
+.kyCoach .c_two a img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.kyCoach .c_two a p {
+    color: #363636;
+    margin-top: 12px;
+}
+
+.kyCoach .c_three {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kyCoach .c_three a {
+    width: 30%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #FFA600;
+    background-color: #FFF2DB;
+    border-radius: 4px;
+}
+
+.kyCoach .c_three a:hover {
+    color: #FFF;
+    background-color: #FFA600;
+}
+
+
+/* 考研合租群 */
+
+.kyHezu {
+    width: 100%;
+    height: auto;
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.kyHezu .fontBox .boxleft::after {
+    background-color: #FFE9FC;
+}
+
+.kyHezu .hezu .swiper-wrapper {
+    margin: 5px 0px 25px;
+}
+
+.kyHezu .hezu .swiper-slide {
+    width: 43%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 16px;
+}
+
+.kyHezu .hezu .swiper-slide:first-child {
+    margin-left: 16px;
+}
+
+.kyHezu .hezu .swiper-slide:last-child {
+    margin-right: 16px;
+}
+
+.kyHezu .hezu .swiper-slide a {
+    display: block;
+    color: #666666;
+}
+
+.kyHezu .hezu .swiper-slide a img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+}
+
+.kyHezu .hezu .swiper-slide a p {
+    margin: 10px 0;
+}
+
+
+/* 考研资料 */
+
+.kyZiliao {
+    width: 100%;
+    height: auto;
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.kyZiliao .fontBox .boxleft::after {
+    background-color: #E9FFFA;
+}
+
+.kyZiliao .zl {
+    width: 100%;
+    height: auto;
+    padding: 5px 16px 0px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kyZiliao .zl a {
+    width: 48%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.kyZiliao .zl a img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* 专硕学硕 */
+
+.kyZiliao .master {
+    width: 100%;
+    padding: 16px;
+}
+
+.kyZiliao .master .top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #333333;
+    padding-left: 10px;
+    margin: 10px 0px 15px;
+}
+
+.kyZiliao .master .top::before {
+    content: '';
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 52%;
+    transform: translate(0, -50%);
+    background-color: #FFAB6B;
+    border-radius: 1.5px;
+}
+
+.kyZiliao .master .sort {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kyZiliao .master .sort>a {
+    width: 31%;
+    min-height: 33px;
+    line-height: 33px;
+    text-align: center;
+    color: #666666;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    font-size: 15px;
+    overflow: hidden;
+    color: #FF9933;
+    background-color: #FFF1DB;
+    border-radius:4px;
+    padding:0px 6px
+}
+
+.kyZiliao .master .sort>.m_style {
+    color: #FF9933;
+}
+
+
+.kyZiliao .master .sort>.n_style {
+    visibility: hidden;
+}
+
+/* 研友互动 */
+
+.kyActive {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.kyActive .ac_bg {
+    width: 28px;
+    height: 90px;
+    background: url(../images/di0.png) no-repeat;
+    background-size: 28px 90px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 28px;
+    margin-right: 15px;
+}
+
+.kyActive .f4 {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kyActive .f4 a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    color: #666666;
+}
+
+.kyActive .f4 img {
+    width: 41px;
+    height: 41px;
+    margin-bottom: 6px;
+    margin-top: 3px;
+}
+
+
+/* 考研师资 */
+
+.kyTeacher {
+    width: 100%;
+    height: auto;
+    border-bottom: 8px solid #F6F6F6;
+}
+
+.kyTeacher .top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 6px;
+}
+
+.kyTeacher .top .left {
+    color: #333333;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.kyTeacher .top .left::before {
+    content: '';
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 52%;
+    transform: translate(0, -50%);
+    background-color: #FFAB6B;
+    border-radius: 1.5px;
+}
+
+.kyTeacher .top .right {
+    width: 25px;
+    height: 16px;
+    color: #FE8434;
+    background-color: #FFF3E9;
+    border-radius: 14px;
+    position: relative;
+}
+
+.kyTeacher .top .right img {
+    width: 12px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bq {
+    width: 100%;
+    height: 50px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #E5E5E5;
+}
+
+.teachModules {
+    position: relative;
+}
+
+.teachModules .teach {}
+
+.teachModules .teach .swiper-wrapper {
+    margin: 5px 0px 25px;
+}
+
+.teachModules .teach {
+    width: 100%;
+    padding-top: 15px;
+    /* margin-left: 16px; */
+}
+
+.teachModules .teach .swiper-slide {
+    width: 86%;
+    height: 132px;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px 0px rgba(227, 227, 227, 0.35)
+}
+
+.teachModules .teach .swiper-slide:first-child {
+    margin-left: 16px;
+}
+
+.teachModules .teach .swiper-slide:last-child {
+    margin-right: 16px!important;
+}
+
+.teachModules .teach .swiper-slide .teachCard {
+    height: 100%;
+    padding: 21px 10px 21px 21px;
+    display: flex;
+    align-items: center;
+}
+
+.teachCard img {
+    width: 85px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.teachCard>div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.teachCard>div p:first-child {
+    width: 100%;
+    color: #999999;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.teachCard>div p:first-child span {
+    display: inline-block;
+    color: #333333;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.teachCard>div p:nth-child(2) {
+    color: #999999;
+}
+
+.teachCard>div a {
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    color: #FFFFFF;
+    background-color: #FFAB6B;
+}
+
+
+/* 上下联动轮播共用样式 */
+
+.teachSlider,
+.imgSlider1 {
+    border-bottom: 1px solid #ebebeb;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.teachSlider .swiper-slide span,
+.imgSlider1 .swiper-slide span {
+    margin: 0 5px;
+    text-align: center;
+    display: block;
+    line-height: 2.5;
+    font-size: 14px;
+    min-width: 56px;
+    color: #666666;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.teachSlider .bar,
+.imgSlider1 .bar {
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.teachSlider .bar .color,
+.imgSlider1 .bar .color {
+    width: 20px;
+    margin: 0 auto;
+    height: 3px;
+    background: #FFAB6B;
+}
+
+
+/* 集训基地 */
+
+.kyPlace {
+    width: 100%;
+    height: auto;
+}
+
+.kyPlace .top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 6px;
+}
+
+.kyPlace .top .left {
+    color: #333333;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.kyPlace .top .left::before {
+    content: '';
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 52%;
+    transform: translate(0, -50%);
+    background-color: #FFAB6B;
+    border-radius: 1.5px;
+}
+
+.kyPlace .top .right {
+    width: 25px;
+    height: 16px;
+    color: #FE8434;
+    background-color: #FFF3E9;
+    border-radius: 14px;
+    position: relative;
+}
+
+.kyPlace .top .right img {
+    width: 12px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imgSlider2 {
+    width: 100%;
+    height: 190px;
+}
+
+.imgSlider2 .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px;
+}
+
+.imgSlider2 .swiper-slide>img {
+    width: 60%;
+    height: 143px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.imgSlider2 .swiper-slide>div {
+    height: 143px;
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.imgSlider2 .swiper-slide>div img {
+    width: 100%;
+    height: 46%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+
+
+

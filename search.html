@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>搜索 - 可锐教育</title>
+    <meta content="研招 - 可锐教育" name="Keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            max-width: 768px;
+            overflow-x: hidden;
+            font-weight: 500;
+        }
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+        #container {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        div.search {
+            padding: 10px;
+        }
+        form {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+        input,
+        button {
+            border: none;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-appearance: none;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+            padding-left: 13px;
+        }
+
+        button {
+            height: 42px;
+            width: 42px;
+            position: absolute;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .search form {
+            height: 42px;
+            position: relative;
+
+        }
+
+        .search input {
+            width: 100%;
+            border-radius: 42px;
+            background: #FFF;
+            transition: .3s linear;
+            float: right;
+            padding-left: 35px;
+            background-color: #F2F2F2;
+        }
+        .search form::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 14px;
+            background: url(./images/scale.svg) no-repeat ;
+            z-index: 999;
+        }
+        .del {
+            display: none;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            background: url(./images/del.svg) no-repeat ;
+            background-size: 100% 100%;
+            z-index: 999;
+        }
+        .search button {
+            background: none;
+            top: 0px;
+            right: 20px;
+        }
+        .search button:before {
+            content: "取消";
+            color: #666666;
+            white-space: nowrap;
+        }
+        .result {
+            width: 100%;
+            height: auto;
+            padding: 0 10px 5px;
+            box-sizing: border-box;
+        }
+        .result>a {
+            width: 100%;
+            height: auto;
+            padding: 12px;
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            color: #666666;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .result>a::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 0px;
+            border-top: 1px solid #f8f8f8;
+        }
+        input[type="search"]::-webkit-search-cancel-button {
+            display: none;
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="search">
+            <form id="myform" action="JavaScript：return true;">
+                <input type="search" placeholder="请输入搜索内容" name="crid" class="kySearch">
+                <a class="del">
+                </a>
+            </form>
+        </div>
+        <div class="result">
+            <a href="javascript:;">
+                考研考试
+            </a>
+            <a href="javascript:;">
+                考研数学
+            </a>
+            <a href="javascript:;">
+                考研英语
+            </a>
+            <a href="javascript:;">
+                考研数学一 大纲
+            </a>
+        </div>
+    </div>
+
+    <script src="./plugins/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".del").click(function () {
+                $('.kySearch').val("");
+            })
+            $(".kySearch").focus(function () {
+                $(".del").fadeIn();
+            })
+            $(".kySearch").blur(function () {
+                $(".del").fadeOut();
+            })
+            $('.search button').click(function () {
+                window.history.back(-1);
+            })
+            $(".kySearch").on('keypress', function (e) {
+                var keycode = e.keyCode;
+                var searchName = $(this).val();
+                if (keycode == '13') {
+                    e.preventDefault();
+                    // 搜索内容
+                    console.log($(this).val());
+                }
+            });
+            $('#myform').bind('search', function () {
+                // 搜索内容 ios原生软键盘才能出现搜索
+            });
+        })
+    </script>
+</body>
+
+</html>
