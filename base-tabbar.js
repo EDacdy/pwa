@@ -15,8 +15,7 @@ try {
             background-color: #FFFFFF;
             z-index: 999;
             display: flex;
-            justify-content: space-between;
-            padding:6px 30px;
+            justify-content: space-evenly;
             font-size: 12px;
             box-shadow:0px -2px 3px 0px rgba(239,239,239,0.75);
             box-sizing: border-box; 
@@ -25,7 +24,7 @@ try {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
             color:#666666;
         }
         // #tabbar a:hover{
@@ -59,17 +58,17 @@ var tab = [
         active: 'http://www.kaoyan1v1.com/m/images/tab-06.png'
     },
     {
-        text: "服务",
-        url: "javascript:;",
+        text: "报告",
+        url: "./data",
         path: 'http://www.kaoyan1v1.com/m/images/tab-07.png',
         active: 'http://www.kaoyan1v1.com/m/images/tab-08.png'
     },
-    {
-        text: "我的",
-        url: "javascript:;",
-        path: 'http://www.kaoyan1v1.com/m/images/tab-09.png',
-        active: 'http://www.kaoyan1v1.com/m/images/tab-10.png'
-    }
+    // {
+    //     text: "我的",
+    //     url: "javascript:;",
+    //     path: 'http://www.kaoyan1v1.com/m/images/tab-09.png',
+    //     active: 'http://www.kaoyan1v1.com/m/images/tab-10.png'
+    // }
 ];
 // 插入节点和渲染数据
 let div = document.createElement('div');
