@@ -53,13 +53,13 @@ var tab = [
     },
     {
         text: "调剂",
-        url: "javascript:;",
+        url: "./tj.html",
         path: 'http://www.kaoyan1v1.com/m/images/tab-05.png',
         active: 'http://www.kaoyan1v1.com/m/images/tab-06.png'
     },
     {
         text: "报告",
-        url: "./data",
+        url: "./data.html",
         path: 'http://www.kaoyan1v1.com/m/images/tab-07.png',
         active: 'http://www.kaoyan1v1.com/m/images/tab-08.png'
     },
