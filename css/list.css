@@ -57,7 +57,7 @@ body {
 }
 
 .header .center img {
-    width: 80px;
+    width: 40px;
     height: auto;
     position: absolute;
     left: 50%;
@@ -65,7 +65,7 @@ body {
     transform: translate(-50%,-50%);
 }
 .header .center img{
-    width: 80px;
+    width: 40px;
     height: auto;
 }
 .header .right img{

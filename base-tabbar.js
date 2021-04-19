@@ -42,33 +42,33 @@ var tab = [
     {
         text: "首页",
         url: "./index.html",
-        path: 'http://www.kaoyan1v1.com/m/images/tab-01.png',
-        active: 'http://www.kaoyan1v1.com/m/images/tab-02.png'
+        path: './images/tab-01.png',
+        active: './images/tab-02.png'
     },
     {
-        text: "资料",
+        text: "资讯",
         url: "./list.html",
-        path: 'http://www.kaoyan1v1.com/m/images/tab-03.png',
-        active: 'http://www.kaoyan1v1.com/m/images/tab-04.png'
+        path: './images/tab-03.png',
+        active: './images/tab-04.png'
     },
     {
         text: "调剂",
         url: "./tj.html",
-        path: 'http://www.kaoyan1v1.com/m/images/tab-05.png',
-        active: 'http://www.kaoyan1v1.com/m/images/tab-06.png'
+        path: './images/tab-05.png',
+        active: './images/tab-06.png'
     },
+    // {
+    //     text: "报告",
+    //     url: "./data.html",
+    //     path: './images/tab-07.png',
+    //     active: './images/tab-08.png'
+    // },
     {
         text: "报告",
         url: "./data.html",
-        path: 'http://www.kaoyan1v1.com/m/images/tab-07.png',
-        active: 'http://www.kaoyan1v1.com/m/images/tab-08.png'
-    },
-    // {
-    //     text: "我的",
-    //     url: "javascript:;",
-    //     path: 'http://www.kaoyan1v1.com/m/images/tab-09.png',
-    //     active: 'http://www.kaoyan1v1.com/m/images/tab-10.png'
-    // }
+        path: './images/tab-09.png',
+        active: './images/tab-10.png'
+    }
 ];
 // 插入节点和渲染数据
 let div = document.createElement('div');
@@ -77,8 +77,11 @@ $('body').append(div);
 var longStr = '';
 console.log(window.location.href);
 $.each(tab, function (index, val) {
-    if (window.location.href.indexOf("kaoyan1v1.com/m") != -1 &&
-        tab[index].url.indexOf("http://www.kaoyan1v1.com/m")!=-1) {
+    if ((window.location.href.indexOf("index") != -1 &&
+        tab[index].url.indexOf("index")!=-1)||(window.location.href.indexOf("list") != -1 &&
+        tab[index].url.indexOf("list")!=-1)||(window.location.href.indexOf("tj") != -1 &&
+        tab[index].url.indexOf("tj")!=-1)||(window.location.href.indexOf("data") != -1 &&
+        tab[index].url.indexOf("data")!=-1)) {
         console.log(tab[index].url);
         var str = `<a href="${tab[index].url}" style="color:#FF8F3A">
                         <img src="${tab[index].active}" alt="" style="width: 20px;height:auto">

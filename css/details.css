@@ -71,7 +71,7 @@ a{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 80px;
+    width:40px;
     height: auto;
 }
 .header .right img{
