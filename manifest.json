@@ -1,0 +1,15 @@
+{
+    "name": "研路-研究生调剂大数据系统",
+    "short_name": "研路",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "研究生调剂大数据系统",
+    "icons": [
+        {
+            "src": "images/logo.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
+}
