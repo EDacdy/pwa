@@ -17,6 +17,45 @@
             background-color: rgb(255, 255, 255);
             color: rgb(95, 93, 93);
         }
+
+        .search__container {
+            background-color: #ffffff;
+            padding-top: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .search__input {
+            width: 38%;
+            padding: 8px 24px;
+            background-color: transparent;
+            transition: transform 250ms ease-in-out;
+            font-size: 14px;
+            line-height: 18px;
+            color: #575756;
+            background-color: transparent;
+            background-image: url(./images/ic_search_black_24px.svg);
+            background-repeat: no-repeat;
+            background-size: 18px 18px;
+            background-position: 95% center;
+            border-radius: 50px;
+            border: 1px solid #dadada;
+            transition: all 250ms ease-in-out;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }
+
+        .search__input::placeholder {
+            color: rgba(87, 87, 86, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .search__input:hover,
+        .search__input:focus {
+            outline: 0;
+        }
     </style>
 </head>
 
@@ -33,9 +72,9 @@
             <img src="./images/menu2.png" />
         </a>
     </div>
-    <div class="add">
-        <!-- 此处广告位最低高度为50px 不满足条件将自动同比例放大显示 -->
-        <img src="./images/addr.png">
+    <div class=" search__container">
+        <input class="search__input" type="text" placeholder="学校名称">
+        <input class="search__input" type="text" placeholder="专业/研究方向" style="width: 56%;">
     </div>
     <div id="top">
         <div class="swiper-container" id="nav">
@@ -73,7 +112,7 @@
                 <!-- 推荐模块 -->
                 <div class="swiper-slide slidepage">
                     <div style="background-color: #F8F8F8;padding:12px" class="tj-list">
-                        <div class="tj-card" >
+                        <div class="tj-card">
                             <div class="yxmc">中国人民大学</div>
                             <div class="yxxq">
                                 <div><span>学校省份：</span>北京</div>
@@ -351,8 +390,8 @@
             clickSlide.find('span').css('color', 'rgba(255, 156, 46, 1)');
         })
         $(document).ready(function () {
-            $('.tj-card').click(function(){
-                window.location.href="./tj_details.html";  
+            $('.tj-card').click(function () {
+                window.location.href = "./tj_details.html";
             })
             $('.next>a').click(function () {
 
